@@ -1,11 +1,32 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0 0 4rem;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureCard {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid rgba(24, 45, 68, 0.12);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 239, 0.96), rgba(244, 248, 252, 0.96));
+  box-shadow: 0 18px 40px rgba(22, 32, 44, 0.08);
+}
+
+.featureEyebrow {
+  margin-bottom: 0.75rem;
+  color: #8b5a2b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.featureLink {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #114a7a;
+  font-weight: 700;
 }

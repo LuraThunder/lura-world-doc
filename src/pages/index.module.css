@@ -4,23 +4,106 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 5rem 0 4rem;
   position: relative;
   overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(255, 214, 153, 0.22), transparent 28%),
+    radial-gradient(circle at top right, rgba(84, 173, 255, 0.18), transparent 30%),
+    linear-gradient(135deg, #101820 0%, #172536 48%, #22405b 100%);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent);
+  pointer-events: none;
+}
+
+.heroGrid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.heroCopy {
+  text-align: left;
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: #f7d7a6;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.heroLead {
+  max-width: 42rem;
+  margin: 1.25rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.heroPanel {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  background: rgba(8, 15, 24, 0.45);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+}
+
+.panelLabel {
+  margin-bottom: 1rem;
+  color: #f7d7a6;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.panelList {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.9;
+}
+
+.panelLink {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #a5d8ff;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3.5rem 0 3rem;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
   }
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* Ensure hero buttons contrast with dark hero background */
@@ -36,4 +119,19 @@
   background: transparent;
   border-color: rgba(255,255,255,0.18);
   color: #fff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroCopy {
+    text-align: center;
+  }
+
+  .heroLead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 }

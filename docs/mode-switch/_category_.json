@@ -1,8 +1,0 @@
-{
-  "label": "モードスイッチ",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "複数のスイッチから1つだけを選択するモードスイッチの詳細なドキュメント。"
-  }
-}

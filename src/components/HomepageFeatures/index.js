@@ -1,46 +1,54 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'スイッチ&スライダー',
-    image: require('@site/static/img/topImage_1.png').default,
+    title: 'LuminousHotel',
+    eyebrow: 'Quick Start',
     description: (
       <>
-        簡単操作でワールド内の様々な要素をコントロール可能。オブジェクトのオン／オフやギミックの起動など、多彩な機能を簡単に実装できます。
+        Google ドキュメント版のクイックスタートを、Web で追いやすい導入手順と FAQ に再編しています。
       </>
     ),
+    link: '/docs/luminous-hotel/overview',
+    linkLabel: 'LuminousHotel 解説へ',
   },
   {
-    title: '高機能なミラーPrefab',
-    image: require('@site/static/img/topImage_2.png').default,
+    title: 'LuminousOasis',
+    eyebrow: 'Expandable',
     description: (
       <>
-        近づいたらフェードして、離れたら自動的にオフになるミラーPrefabを同梱。パフォーマンスに配慮しつつ、自然で美しい体験を実現します。
+        独立した導入方法と補足解説を追加していくための専用カテゴリを先行して用意しています。
       </>
     ),
+    link: '/docs/luminous-oasis/overview',
+    linkLabel: 'LuminousOasis 解説へ',
   },
   {
-    title: '3D／2D切り替え機能',
-    image: require('@site/static/img/LuraSwitch2-social-card.png').default,
+    title: 'Future Worlds',
+    eyebrow: 'Template',
     description: (
       <>
-        3Dモードと2Dモードをシームレスに切り替え可能。ワールド制作者の好みや世界観に応じた最適な表示方法を提供します。
+        今後のワールド追加でも構造を崩さないよう、概要、導入方法、その他解説の共通枠を切り出しています。
       </>
     ),
+    link: '/docs/future-worlds/overview',
+    linkLabel: '今後のワールド解説へ',
   },
 ];
 
-function Feature({image, title, description}) {
+function Feature({eyebrow, title, description, link, linkLabel}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img src={image} className={styles.featureSvg} alt={title} style={{aspectRatio: '16/9', objectFit: 'contain', width: '100%'}} />
-      </div>
-      <div className="text--center padding-horiz--md">
+      <div className={styles.featureCard}>
+        <p className={styles.featureEyebrow}>{eyebrow}</p>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <Link className={styles.featureLink} to={link}>
+          {linkLabel}
+        </Link>
       </div>
     </div>
   );

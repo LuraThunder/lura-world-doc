@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Lura Switch 2 説明書',
-  tagline: 'VRChat向けギミックシステム LuraSwitch2 の公式ドキュメント',
+  title: 'Lura World Docs',
+  tagline: 'VRChatワールドアセットの導入とカスタマイズガイド',
   favicon: 'img/icon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -23,12 +23,12 @@ const config = {
   url: 'https://LuraThunder.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/lura-switch-docs/',
+  baseUrl: '/lura-world-doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'LuraThunder', // Usually your GitHub org/user name.
-  projectName: 'lura-switch-docs', // Usually your repo name.
+  projectName: 'lura-world-doc', // Usually your repo name.
 
   onBrokenLinks: 'warn',
 
@@ -47,10 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/LuraThunder/lura-world-doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -64,25 +62,35 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/LuraSwitch2-social-card.png',
+      image: 'img/rapture_20260204093229.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
         logo: {
-          alt: 'LuraSwitch2 Logo',
+          alt: 'Lura World Docs Logo',
           src: 'img/Logo_Alpha.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/intro',
             position: 'left',
             label: 'ドキュメント',
           },
-          
           {
-            href: 'https://github.com/LuraThunder/lura-switch-docs',
+            type: 'docSidebar',
+            sidebarId: 'luminousHotelSidebar',
+            label: 'LuminousHotel',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'luminousOasisSidebar',
+            label: 'LuminousOasis',
+            position: 'left',
+          },
+          {
+            href: 'https://github.com/LuraThunder/lura-world-doc',
             label: 'GitHub',
             position: 'right',
           },
@@ -95,8 +103,16 @@ const config = {
             title: 'ドキュメント',
             items: [
               {
-                label: 'はじめに',
+                label: 'ホーム',
                 to: '/docs/intro',
+              },
+              {
+                label: 'LuminousHotel',
+                to: '/docs/luminous-hotel/overview',
+              },
+              {
+                label: 'LuminousOasis',
+                to: '/docs/luminous-oasis/overview',
               },
             ],
           },
@@ -114,12 +130,8 @@ const config = {
             ],
           },
           {
-            title: 'その他',
+            title: '配布先',
             items: [
-              {
-                label: 'BOOTH 商品ページ',
-                href: 'https://lura.booth.pm/items/7923735',
-              },
               {
                 label: 'BOOTH ショップ',
                 href: 'https://lura.booth.pm/',

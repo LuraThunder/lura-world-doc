@@ -15,80 +15,23 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  tutorialSidebar: [
-    'intro',
-    'quick-start',
-    {
-      type: 'category',
-      label: 'スイッチ',
-      items: [
-        'switches/overview',
-        'switches/function-switches',
-        'switches/object-switches',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'スライダー',
-      items: [
-        'sliders/overview',
-        'sliders/slider-mirror',
-        {
-          type: 'category',
-          label: 'Slider_Audio／Music',
-          items: [
-            'sliders/slider-audio',
-            'sliders/slider-music',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Slider_Light／AvatarLight',
-          items: [
-            'sliders/slider-light',
-            'sliders/slider-avatar-light',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Slider_Night／PostEffect',
-          items: [
-            'sliders/slider-night',
-            'sliders/slider-posteffect',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Slider_MirrorRotate／Object',
-          items: [
-            'sliders/slider-mirror-rotate',
-            'sliders/slider-object',
-          ],
-        },
-        'sliders/slider-collider',
-        'sliders/slider-video',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'モードスイッチ',
-      items: [
-        'mode-switch/overview',
-        'mode-switch/mode-switch-mirror',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ユーティリティ',
-      items: [
-        'utilities/lura-mirror',
-        'utilities/lura-collider',
-        'utilities/switch-syncer',
-        'utilities/switch-selector',
-        'utilities/height-offsetter',
-        'utilities/switch-board',
-      ],
-    },
+  homeSidebar: ['intro'],
+  luminousHotelSidebar: [
+    'luminous-hotel/overview',
+    'luminous-hotel/setup',
+    'luminous-hotel/scene-settings',
+    'luminous-hotel/upload',
+    'luminous-hotel/troubleshooting',
+  ],
+  luminousOasisSidebar: [
+    'luminous-oasis/overview',
+    'luminous-oasis/installation',
+    'luminous-oasis/customization',
+  ],
+  futureWorldsSidebar: [
+    'future-worlds/overview',
+    'future-worlds/installation',
+    'future-worlds/customization',
   ],
 };
 

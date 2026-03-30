@@ -6,30 +6,80 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* Dark-themed base palette (used on light pages as a dark primary) */
-  --ifm-color-primary: #1f2937; /* slate-800 */
-  --ifm-color-primary-dark: #111827; /* slate-900 */
-  --ifm-color-primary-darker: #0b1220;
-  --ifm-color-primary-darkest: #05060a;
-  --ifm-color-primary-light: #374151; /* slate-700 */
-  --ifm-color-primary-lighter: #4b5563; /* slate-600 */
-  --ifm-color-primary-lightest: #6b7280; /* slate-500 */
+  --ifm-color-primary: #114a7a;
+  --ifm-color-primary-dark: #0e4069;
+  --ifm-color-primary-darker: #0d3c62;
+  --ifm-color-primary-darkest: #0a3151;
+  --ifm-color-primary-light: #155a92;
+  --ifm-color-primary-lighter: #1a67a7;
+  --ifm-color-primary-lightest: #2f7fca;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  /* Accent used for hero buttons to ensure contrast with dark hero background */
-  --site-accent: #60a5fa;
+  --site-accent: #f0aa4f;
+  --ifm-background-color: #f4efe7;
+  --ifm-font-family-base: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  --ifm-heading-font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  /* Dark mode: use a readable accent for primary on dark backgrounds */
-  --ifm-color-primary: #60a5fa; /* sky-400 */
-  --ifm-color-primary-dark: #3b82f6; /* sky-500 */
-  --ifm-color-primary-darker: #2563eb; /* sky-600 */
-  --ifm-color-primary-darkest: #1e40af; /* indigo-800 */
-  --ifm-color-primary-light: #93c5fd; /* sky-300 */
-  --ifm-color-primary-lighter: #bfdbfe; /* sky-200 */
-  --ifm-color-primary-lightest: #e0f2fe; /* sky-100 */
+  --ifm-color-primary: #8dc8ff;
+  --ifm-color-primary-dark: #69b6ff;
+  --ifm-color-primary-darker: #56acff;
+  --ifm-color-primary-darkest: #2995ff;
+  --ifm-color-primary-light: #b1daff;
+  --ifm-color-primary-lighter: #c4e4ff;
+  --ifm-color-primary-lightest: #edf7ff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.03);
-  --site-accent: #60a5fa;
+  --site-accent: #f0aa4f;
+  --ifm-background-color: #0f1722;
+}
+
+main .container {
+  position: relative;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.02em;
+}
+
+.doc-media {
+  margin: 1rem 0;
+}
+
+.doc-media img {
+  display: block;
+  height: auto;
+}
+
+.doc-media-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.doc-media-row .doc-media {
+  margin: 0;
+}
+
+.doc-media--center img {
+  margin: 0 auto;
+}
+
+.doc-media--left img {
+  margin: 0;
+}
+
+.doc-media--full img {
+  width: min(624px, 100%);
+}
+
+@media (max-width: 640px) {
+  .doc-media-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }

@@ -1,0 +1,122 @@
+---
+sidebar_position: 2
+---
+
+# セットアップと導入
+
+LuminousHotel を新規 Unity プロジェクトへ導入し、シーンを正しく開ける状態まで進めるための手順です。
+
+## 必要な環境
+
+- Unity 2022.3 LTS 系
+- VRChat Creator Companion
+- VRChat SDK3 Worlds
+- TextMeshPro
+- LuminousHotel ver1.10 以降を使う場合は VRC Light Volumes
+
+## 1. VCC の導入と新規プロジェクト作成
+
+VRChat の Web サイトから Creator Companion をインストールしてください。
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-hotel/image6.png" alt="Creator Companion のダウンロード画面" width="346.5" />
+</div>
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-hotel/image50.png" alt="Creator Companion のプロジェクト作成画面" width="564.5" />
+</div>
+
+特別な理由がない限り、既存プロジェクトへ追加するよりも新規プロジェクトを作成する構成を推奨します。ワールド向けのテンプレートを選び、Create Project でプロジェクトを作成してください。
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-hotel/image37.png" alt="Open Project ボタンの位置" width="169.02" />
+</div>
+
+## 2. VRC Light Volumes を追加する
+
+LuminousHotel ver1.10 以降では VRC Light Volumes に対応しています。導入前に VCC へ登録してください。
+
+1. [VPM Listing](https://redsim.github.io/vpmlisting/) を開く
+2. Add to VCC を押して Creator Companion に登録する
+3. 対象プロジェクトの Manage Project を開く
+4. Manage Packages から VRC Light Volumes を追加する
+5. Installed Version を 1.0.0 にしてインポートする
+
+<div class="doc-media doc-media--left doc-media--full">
+	<img src="/lura-world-doc/img/luminous-hotel/image8.png" alt="VPM Listing から VRC Light Volumes を追加する画面" width="624" />
+</div>
+
+<div class="doc-media doc-media--left doc-media--full">
+	<img src="/lura-world-doc/img/luminous-hotel/image46.png" alt="Manage Project ボタンの位置" width="624" />
+</div>
+
+<div class="doc-media doc-media--left doc-media--full">
+	<img src="/lura-world-doc/img/luminous-hotel/image11.png" alt="Manage Packages で VRC Light Volumes を追加する画面" width="624" />
+</div>
+
+ver1.10 以降の LuminousHotel をインポートすれば、シーンを開いた時点で Light Volume の設定は適用済みです。
+
+## 3. UnityPackage をインポートする
+
+購入したパックでダウンロードできる UnityPackage は、対象パックに応じてすべてインポートしてください。
+
+### Full Pack の場合
+
+- Condominium_701
+- SimpleRoom_702
+- LuminousHotel_FullPack
+
+Full Pack は最後にインポートしてください。先に入れると、扉の鍵が開けられない問題が発生することがあります。順番を誤った場合は、再インポートしてからシーンを開き直してください。
+
+### Condominium 701 と 702 の場合
+
+- Condominium_701
+- SimpleRoom_702
+
+### SimpleRoom 702 の場合
+
+- SimpleRoom_702
+
+既存プロジェクトへ導入した場合、シェーダー競合で全体がピンクになることがあります。原因が切り分けにくい場合は、新規プロジェクトでの導入が安全です。
+
+## 4. TextMeshPro Essentials を導入する
+
+インポート後に TMP Importer が表示されたら、Import TMP Essentials を実行してください。
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-hotel/image1.png" alt="TMP Importer のダイアログ" width="600" />
+</div>
+
+先にシーンを開いてから導入した場合は、シーンを開き直すと表示が安定します。もしウィンドウを閉じてしまった場合は、Window から Package Manager を開き、Unity Registry の TextMeshPro から導入してください。
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-hotel/image7.png" alt="Package Manager から TextMeshPro を導入する画面" width="600" />
+</div>
+
+## 5. シーンを開く
+
+以下のシーンは Project ウィンドウからダブルクリックで開いてください。ドラッグアンドドロップで開くと、マルチシーン扱いになり正しくセットアップできません。
+
+:::warning シーンはダブルクリックで開く
+ドラッグアンドドロップで開くとマルチシーン扱いになり、正しくセットアップできません。
+:::
+
+<div class="doc-media doc-media--left doc-media--full">
+	<img src="/lura-world-doc/img/luminous-hotel/image41.png" alt="Project ウィンドウからシーンを開く例" width="800" />
+</div>
+
+### Full Pack
+
+Assets/QuickBrown/LuminousHotel/FullPack/SCENE/LuminousHotel_FullPack.unity
+
+### Condominium 701
+
+Assets/QuickBrown/LuminousHotel/Room701_Condominium/SCENE/Condominium_701.unity
+
+### SimpleRoom 702
+
+Assets/QuickBrown/LuminousHotel/Room702_SimpleRoom/SCENE/SimpleRoom_702.unity
+
+## 次に進むページ
+
+[シーン初期設定](./scene-settings.md) で RoomOwner やサインプレートの設定へ進んでください。
