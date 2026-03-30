@@ -1,0 +1,24 @@
+vrchat:
+  label: VRChat
+  permalink: /vrchat
+  description: VRChat関連の記事
+
+update:
+  label: アップデート
+  permalink: /update
+  description: LuraSwitch2のアップデート情報
+
+tutorial:
+  label: チュートリアル
+  permalink: /tutorial
+  description: チュートリアル記事
+
+tips:
+  label: Tips
+  permalink: /tips
+  description: 使い方のヒント
+
+udonsharp:
+  label: UdonSharp
+  permalink: /udonsharp
+  description: UdonSharp関連の記事
