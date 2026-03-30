@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# LuminousOasis 解説
+# LuminousOasis クイックスタートガイド
 
 LuminousOasis の独立した解説ページ用カテゴリです。
 

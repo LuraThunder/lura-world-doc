@@ -1,54 +1,76 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'LuminousHotel',
+    title: 'LuminousHotel スタートガイド',
     eyebrow: 'Quick Start',
+    image: '/img/luminous-hotel_img.jpg',
     description: (
       <>
-        Google ドキュメント版のクイックスタートを、Web で追いやすい導入手順と FAQ に再編しています。
+        導入、初期設定、アップロード、よくある質問までを 1 本の導線で確認できます。
       </>
     ),
     link: '/docs/luminous-hotel/overview',
-    linkLabel: 'LuminousHotel 解説へ',
+    linkLabel: 'LuminousHotel を開く',
+    isComingSoon: false,
   },
   {
-    title: 'LuminousOasis',
-    eyebrow: 'Expandable',
+    title: 'LuminousOasis スタートガイド',
+    eyebrow: 'Quick Start',
+    image: '/img/luminous-oasis_img.jpg',
     description: (
       <>
-        独立した導入方法と補足解説を追加していくための専用カテゴリを先行して用意しています。
+        LuminousOasis 用の独立したガイド枠です。今後の本文追加をこの構成に沿って進められます。
       </>
     ),
     link: '/docs/luminous-oasis/overview',
-    linkLabel: 'LuminousOasis 解説へ',
+    linkLabel: 'LuminousOasis を開く',
+    isComingSoon: false,
   },
   {
-    title: 'Future Worlds',
-    eyebrow: 'Template',
+    title: 'Coming Soon',
+    eyebrow: 'Next Guide',
     description: (
       <>
-        今後のワールド追加でも構造を崩さないよう、概要、導入方法、その他解説の共通枠を切り出しています。
+        次のワールドアセット用ガイドを追加予定です。
       </>
     ),
-    link: '/docs/future-worlds/overview',
-    linkLabel: '今後のワールド解説へ',
+    linkLabel: '準備中',
+    isComingSoon: true,
   },
 ];
 
-function Feature({eyebrow, title, description, link, linkLabel}) {
+function Feature({eyebrow, title, image, description, link, linkLabel, isComingSoon}) {
+  const imageSrc = image ? useBaseUrl(image) : null;
+
   return (
-    <div className={clsx('col col--4')}>
-      <div className={styles.featureCard}>
+    <div className={styles.featureColumn}>
+      <div className={clsx(styles.featureCard, isComingSoon && styles.featureCardMuted)}>
+        {isComingSoon ? (
+          <div className={clsx(styles.featureImageLink, styles.featurePlaceholder)} aria-hidden="true">
+            <span className={styles.featurePlaceholderText}>Coming Soon</span>
+          </div>
+        ) : (
+          <Link className={styles.featureImageLink} to={link} aria-label={title}>
+            <img className={styles.featureImage} src={imageSrc} alt={title} />
+          </Link>
+        )}
         <p className={styles.featureEyebrow}>{eyebrow}</p>
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-        <Link className={styles.featureLink} to={link}>
-          {linkLabel}
-        </Link>
+        <p className={styles.featureDescription}>{description}</p>
+        {isComingSoon ? (
+          <span className={clsx(styles.featureLink, styles.featureLinkDisabled)}>
+            {linkLabel}
+          </span>
+        ) : (
+          <Link className={styles.featureLink} to={link}>
+            {linkLabel}
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -58,7 +80,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className={styles.featureGrid}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

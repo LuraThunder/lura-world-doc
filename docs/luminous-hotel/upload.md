@@ -11,15 +11,15 @@ sidebar_position: 4
 VRChat SDK から Show Control Panel を開き、ログイン後にワールド名とサムネイルを設定して Build and Upload を実行します。
 
 <div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-hotel/image35.png" alt="VRChat SDK の Show Control Panel" width="178.5" />
+	<img src="/lura-world-doc/img/luminous-hotel/image35.png" alt="VRChat SDK の Show Control Panel" width="420" />
 </div>
 
 <div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-hotel/image23.png" alt="ワールド名とサムネイルの設定画面" width="164.5" />
+	<img src="/lura-world-doc/img/luminous-hotel/image23.png" alt="ワールド名とサムネイルの設定画面" width="420" />
 </div>
 
 <div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-hotel/image44.png" alt="Build and Upload ボタン" width="338.5" />
+	<img src="/lura-world-doc/img/luminous-hotel/image44.png" alt="Build and Upload ボタン" width="420" />
 </div>
 
 ## Quest 向けアップロード

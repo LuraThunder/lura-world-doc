@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Lura World Docs',
-  tagline: 'VRChatワールドアセットの導入とカスタマイズガイド',
+  title: 'Lura World Asset Guide',
+  tagline: 'VRChatワールドアセットの導入と設定をまとめたクイックスタートガイド',
   favicon: 'img/icon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,11 +73,6 @@ const config = {
         },
         items: [
           {
-            to: '/docs/intro',
-            position: 'left',
-            label: 'ドキュメント',
-          },
-          {
             type: 'docSidebar',
             sidebarId: 'luminousHotelSidebar',
             label: 'LuminousHotel',
@@ -103,8 +98,8 @@ const config = {
             title: 'ドキュメント',
             items: [
               {
-                label: 'ホーム',
-                to: '/docs/intro',
+                label: 'トップページ',
+                to: '/',
               },
               {
                 label: 'LuminousHotel',

@@ -65,6 +65,10 @@ main .container {
   margin: 0;
 }
 
+.doc-media-row img {
+  height: auto;
+}
+
 .doc-media--center img {
   margin: 0 auto;
 }

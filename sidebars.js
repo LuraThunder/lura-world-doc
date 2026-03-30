@@ -15,7 +15,6 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  homeSidebar: ['intro'],
   luminousHotelSidebar: [
     'luminous-hotel/overview',
     'luminous-hotel/setup',
@@ -27,11 +26,6 @@ const sidebars = {
     'luminous-oasis/overview',
     'luminous-oasis/installation',
     'luminous-oasis/customization',
-  ],
-  futureWorldsSidebar: [
-    'future-worlds/overview',
-    'future-worlds/installation',
-    'future-worlds/customization',
   ],
 };
 

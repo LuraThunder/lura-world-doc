@@ -2,13 +2,11 @@
 sidebar_position: 1
 ---
 
-# LuminousHotelへようこそ
+# LuminousHotel クイックスタートガイド
 
 LuminousHotel のクイックスタートガイドを、作業順に沿って読みやすく再構成した入口ページです。
 
-<div class="doc-media doc-media--left doc-media--full">
-	<img src="/lura-world-doc/img/luminous-hotel/image13.png" alt="LuminousHotel セクション区切り" width="624" />
-</div>
+
 
 <div class="doc-media doc-media--left">
 	<img src="/lura-world-doc/img/luminous-hotel/image43.png" alt="LuminousHotel キービジュアル" width="601.7" />
@@ -37,7 +35,3 @@ LuminousHotel のクイックスタートガイドを、作業順に沿って読
 2. [シーン初期設定](./scene-settings.md) で RoomOwner やサインプレートを整える
 3. [アップロードと Quest 対応](./upload.md) で公開準備を進める
 4. [トラブルシューティング](./troubleshooting.md) で詰まりやすいポイントや調整項目を確認する
-
-<div class="doc-media doc-media--left doc-media--full">
-	<img src="/lura-world-doc/img/luminous-hotel/image29.png" alt="LuminousHotel フッターグラフィック" width="818.5" />
-</div>

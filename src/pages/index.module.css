@@ -73,18 +73,30 @@
   text-transform: uppercase;
 }
 
-.panelList {
-  margin: 0;
-  padding-left: 1.25rem;
+.panelBody {
+  margin: 0 0 1rem;
   color: rgba(255, 255, 255, 0.92);
-  line-height: 1.9;
+  line-height: 1.85;
 }
 
 .panelLink {
   display: inline-flex;
-  margin-top: 1rem;
-  color: #a5d8ff;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1.1rem;
+  border: 1px solid rgba(165, 216, 255, 0.32);
+  border-radius: 999px;
+  background: rgba(165, 216, 255, 0.12);
+  color: #d7ecff;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.panelLink:hover {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(165, 216, 255, 0.2);
 }
 
 @media screen and (max-width: 996px) {
@@ -97,30 +109,6 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-/* Ensure hero buttons contrast with dark hero background */
-.heroBanner .button--primary {
-  background-color: var(--site-accent);
-  border-color: var(--site-accent);
-  color: #fff;
-}
-.heroBanner .button--primary:hover {
-  background-color: color-mix(in srgb, var(--site-accent) 75%, black 25%);
-}
-.heroBanner .button--secondary {
-  background: transparent;
-  border-color: rgba(255,255,255,0.18);
-  color: #fff;
-}
-
 @media screen and (max-width: 996px) {
   .heroCopy {
     text-align: center;
@@ -129,9 +117,5 @@
   .heroLead {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .buttons {
-    justify-content: center;
   }
 }

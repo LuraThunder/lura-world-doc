@@ -19,32 +19,16 @@ function HomepageHeader() {
           </Heading>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p className={styles.heroLead}>
-            LuminousHotel を起点に、各ワールドアセットの導入方法とカスタマイズ手順を
-            独立したページとして整理していくためのドキュメントサイトです。
+            QuickBrownワールドアセットのセットアップから公開前の確認までを短い導線で確認できるドキュメントをまとめています。
           </p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs/luminous-hotel/setup">
-              LuminousHotel セットアップ
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/luminous-oasis/overview">
-              LuminousOasis 解説
-            </Link>
-          </div>
         </div>
         <div className={styles.heroPanel}>
-          <p className={styles.panelLabel}>現在の収録内容</p>
-          <ul className={styles.panelList}>
-            <li>LuminousHotel のクイックスタート移植</li>
-            <li>セットアップから調整項目までの再構成</li>
-            <li>LuminousOasis 用の拡張枠</li>
-            <li>今後のワールド追加用テンプレート</li>
-          </ul>
-          <Link className={styles.panelLink} to="/docs/intro">
-            ドキュメント構成を見る
+          <p className={styles.panelLabel}>QuickBrown Design Studio</p>
+          <p className={styles.panelBody}>
+            Lura 制作の VRChat 向けワールドアセットとギミックを配布している BOOTH ショップです。
+          </p>
+          <Link className={styles.panelLink} href="https://lura.booth.pm/">
+            BOOTH ショップを見る
           </Link>
         </div>
       </div>
@@ -57,7 +41,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="VRChat ワールドアセットの導入とカスタマイズ手順をまとめたドキュメントサイト">
+      description="QuickBrown Design Studio の VRChat ワールドアセット向けに、導入手順、初期設定、アップロードの流れをまとめたドキュメントサイト">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
