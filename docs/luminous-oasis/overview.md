@@ -6,8 +6,14 @@ sidebar_position: 1
 
 Luminous Oasis をご購入いただきありがとうございます。
 
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-oasis/image11.png"  width="800" />
+</div>
+
 このドキュメントでは以下の項目について解説しています。
 
+
+- 前提条件の導入
 - RoomOwner の設定
 - BGM の設定
 - 動画プレーヤーの設定
@@ -15,6 +21,13 @@ Luminous Oasis をご購入いただきありがとうございます。
 - Quest 対応
 
 是非自分の好みにワールドをカスタムし、ご自身や友人と Luminous Oasis をお楽しみください。
+
+## 先に確認しておきたい注意点
+
+:::warning ver2.0以前の LuminousHotel とは非互換です
+ver2.0以前の既存の LuminousHotel プロジェクトに LuminousOasis を導入すると、互換性がなくシーンや設定データが壊れるおそれがあります。
+LuminousOasis を導入する場合は、必ず新規プロジェクトを作成してセットアップしてください。
+:::
 
 ## 読み進め方
 
