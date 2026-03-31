@@ -1,0 +1,82 @@
+P|LuminousOasisクイックスタートガイド
+P|Luminous Oasisをご購入いただきありがとうございます
+P|このドキュメントでは以下の項目について解説しています。
+P|是非自分の好みにワールドをカスタムし、ご自身や友人とLuminous Oasisをお楽しみください。
+H1|VCCの導入／新規プロジェクト作成
+P|VRChatのWebページからCreator Companionをダウンロードし、インストールしてください。
+P|新規のプロジェクトを作成することを推奨します！
+P|ワールド向けの設定を選択し、Create projectを押してください / （VRChatアップデートで表記が変わる可能性があります）
+P|OpenProjectのボタンを押すと、VRChatワールド向けの基礎設定がしてあるプロジェクトが開きます。VRC Light Volumes導入LuminousOasisはVRC LightVolumesを使用しています。 / Creator CompanionでLightVolumeをインストールする必要があります。まずは以下のリンクでAdd to VCCを押してCreatorCompanionにVRCLightVolumesを登録しましょう / https://redsim.github.io/vpmlisting/ / プロジェクト一覧でManageProjectのボタンを押してManagePackagesの画面に行きます。Add to VCCをして正しくインストールされていれば一覧にあるはずです。 / InstalledVersionを1.0.0にしてプロジェクトにインポートしてください。 / これで事前準備は完了です。パッケージのインポートUnityパッケージをUnityにインポートしてください。
+P|LuminousOasis 単体でご利用の方
+P|LuminousOasis.unitypackage?を インポートしてください
+P|LuminousHotelと一緒に使いたい方
+P|Condominium_701 / SimpleRoom_702 / LuminousHotel_FullPack を事前にインポートし / LuminousOasis.unitypackage / をインポートしてください。
+P|ヒント：LuminousHotelと一緒に使う場合は、FullPackのみ対応しております。ご注意ください。
+P|すべてインポートした後でもピンク色のシェーダーエラーが発生する場合
+P|・既存のプロジェクトにインポートしていませんか？シェーダーが重複している可能性があります。 / 片方のシェーダーを削除するか、新規にプロジェクトを作成してください。
+P|インポート後、以下のようなTMP Importerが出てくるので、 / Import TMP Essentialsのボタンを押してください。 / テキストの描画に必要なものです。先にシーンを開いた後にImportした場合はシーンを開きなおしてみてください。 /
+P|もしメニューを閉じてしまっていた場合は、Window→PackageManager からPackages:Unity Registryにした状態で、TextMeshProをインポートしてください。
+P|シーンを開く以下のシーンを必ずダブルクリックで開いてください。 / ※ドラッグ＆ドロップで開いた場合、マルチシーンという別の扱いになってしまい、正しく開くことができません。
+P|LuminousOasis 単体でご利用の方
+P|Assets\QuickBrown\LuminousOasis\SCENE\LuminousOasis.unity
+P|LuminousHotelと一緒に使いたい方
+P|Assets\QuickBrown\LuminousHotel\FullPack_OasisPlus\SCENE\FullPack_OasisPlus.unity
+P|アップロード前の設定RoomOwnerの設定
+P|LuminousOasisにはプールエリアへの入室を制限するためのユーザーの名前を事前に登録するRoomOwnerシステムがあります。
+P|/ RoomOwnerと名前が一致するプレイヤーの場合、コンソールから鍵が出現し、入口のロックを解錠することが可能です。
+P|LuminousOasis 単体でご利用の方
+P|以下からRoomOwnerListに登録してください。
+P|/ RoomOwnerに設定すると、実行時、ディスプレイに名前が表示され、入口の鍵を取得することができるようになります。
+P|RoomOwnerは複数人登録することができます。 / VRChatのユーザーネームで判定しているので、自分の名前やフレンドの名前を登録してご利用ください。
+P|LuminousHotelと一緒に使いたい方
+P|FullPack_OasisPlusのシーンでは部屋ごとにRoomOwnerを登録する必要があります。
+P|それぞれ部屋ごとに必要な名前を設定してください。BGMの設定
+P|ワールドにBGMを簡単にセットアップできるように、簡易的なBGM再生機能であるMusicSequencerというシステムを用意してあります。
+P|MusicSequencerはBGMを連続で再生し、ループさせることができます。
+P|簡易的ですがご利用ください。
+P|ヒント：最近は動画の再生が個人の環境によって不安定ということもあり、ワールドBGMが無音にならないようにするため音源をインポートする方法をおすすめしています。
+P|ヒント：オーディオはLowPassTriggerで管理されており、エントランスやラウンジ内ではサウンドが遮蔽された感じになります。
+P|MusicSequencerのAudioSourceもLowPassTriggerによってコントロールされているため、サウンドの遮蔽がかかります。（特に何もする必要はありません）
+P|別の音源を追加した際などはここに追加することで遮蔽の対象に加えることが可能です。
+H1|動画プレイヤーの設定
+P|動画プレーヤーは(MoviePlayerHere)の階層に入れることで想定の位置／回転／スケールで設置することができます。 / （微調整はしてください）
+P|お好みの動画プレーヤーを設定してご利用ください。 /
+H3|推奨動画プレイヤー：VizVid
+P|推奨している動画プレーヤーはVizVidです。
+P|VizVidのOn-Screen ControlであればMoviePlayerHereの位置に配置することで、そのまま使用できます。 / その他のプレイヤーを使う場合は細かい位置は調整してください。
+P|なお、動画プレーヤーについての詳細はVizVidのマニュアルを参照してください。
+H1|アップロード（PC）
+P|VRChatSDK→Show Control Panelでパネルを出します。 / ログインしてください。
+P|ワールド名、サムネイルを設定します。
+P|Build and Upload を押してアップロードします。アップロード（iOS／Android）Platformの項目をWindows／Android／iOSにチェックを入れます / ※初回は切り替えにかなり時間がかかります
+P|警告：iOS／AndroidへのアップロードをサポートしているのはLuminousOasis単体のシーンのみとなります。 / LuminousHotelとあわせて使うFullPack_OasisPlus は容量オーバーのため、iOS／Androidへのアップロードをサポートしていません。ヒント：iOS／Androidでのアップロード時に自動的にオブジェクトのオン／オフを切り替えるギミックが設定されているので、負荷調整などにご利用ください。
+P|ギミック解説
+P|・AreaCullingerについて
+P|OcclusionCullingが効かないCanvasなどを目的にしたカリング用ギミックです。 / トリガーの範囲外に出ると、Canvasを非表示にして負荷を軽減します。
+P|OasisPlusのような大規模なシーンでの負荷調整のために設定してあります。
+P|・LightVolumeTriggerについて
+P|トリガー範囲内のPointLightVolumeの明るさをコントロールしています。トリガー内に入ると、PointLightVolumeが点灯し、出ると消灯します。
+P|・LurasVoiceShutterについて
+P|エリアごとに声を分離するためのギミックです。 / RoomIdを指定したVoicesTrigger_Areaを配置することで、声の聞こえ方をコントロールできます。 / デフォルトでは、ラウンジとサウナは声が遮蔽されます。
+P|・TeleportSystemについて
+P|階段エリアにはテレポート用のトリガーが設定してあります。 / （LuminousOasis単体ではデフォルトで非アクティブです）
+P|TeleportTriggerの範囲内に入ったらTARGETへと移動します。
+P|・エレベーターギミックについて
+P|エレベーターだけのサンプルシーンは以下にあります。
+P|Assets\QuickBrown\LuminousHotel\FullPack\3DASSET\04_GIMMICK\Elevator\SCENE
+P|・スポーン位置がエレベーターの中心位置（teleportTarget の位置）にある場合、ジョイン時に扉が開きます。
+P|・Elevator_Floorのスクリプトで、エレベーターを識別し、ElevatorManagerで管理します。 / ・FloorNumberはフロアの識別番号です。
+P|・ElevatorNumberはエレベーターが複数台あるときの識別番号です。
+P|ElevatorManagerにそれぞれのエレベーターを登録する必要があります。
+P|それぞれのスイッチはElevatorManagerと接続します。
+P|ボタンを押した際の移動先のエレベーターをIDで指定してください。
+P|LuminousOasis（単体シーン）
+P|改変が可能なように、エレベーターを別エリアなどに接続することができるように、7Fフロア用のエレベーターを用意してあります。
+P|・デフォルトでは地下２階エリアのエレベーターの中にあるスイッチは使用しないため、非アクティブになっています。使用する際はアクティブにしてください。
+P|・LowPassTriggerについて
+P|LowPassTriggerはAudioSourceについているAudioLowPassFilterをコントロールします。
+P|トリガー内に入ったときに指定の値になるため、音が遮蔽されくぐもったようにする演出が可能です。
+P|・Mirror／スイッチ類について
+P|LuraSwitch2を使用しています。
+P|詳細の使い方についてはこちらのドキュメントをご確認ください。
+P|https://lurathunder.github.io/lura-switch-docs/

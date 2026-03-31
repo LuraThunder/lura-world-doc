@@ -4,16 +4,22 @@ sidebar_position: 1
 
 # LuminousOasis クイックスタートガイド
 
-LuminousOasis の独立した解説ページ用カテゴリです。
+Luminous Oasis をご購入いただきありがとうございます。
 
-現時点では構成だけを先に整えており、今後以下の内容を追加していく想定です。
+このドキュメントでは以下の項目について解説しています。
 
-- 導入方法
-- セットアップ時の注意点
-- ワールド固有の改変ポイント
-- FAQ
+- RoomOwner の設定
+- BGM の設定
+- 動画プレーヤーの設定
+- アップロード方法
+- Quest 対応
 
-## 先行して用意しているページ
+是非自分の好みにワールドをカスタムし、ご自身や友人と Luminous Oasis をお楽しみください。
 
-1. [LuminousOasis 導入方法](./installation.md)
-2. [LuminousOasis その他解説](./customization.md)
+## 読み進め方
+
+1. [セットアップと導入](./setup) でプロジェクト作成からシーン起動まで進める
+2. [シーン初期設定](./scene-settings) で RoomOwner、BGM、動画プレーヤーを整える
+3. [アップロードと Quest 対応](./upload) で公開準備を進める
+4. [よくある質問](./troubleshooting) で導入時に詰まりやすいポイントを確認する
+5. [ギミック解説](./gimmicks) で各ギミックの役割と調整箇所を確認する

@@ -24,8 +24,11 @@ const sidebars = {
   ],
   luminousOasisSidebar: [
     'luminous-oasis/overview',
-    'luminous-oasis/installation',
-    'luminous-oasis/customization',
+    'luminous-oasis/setup',
+    'luminous-oasis/scene-settings',
+    'luminous-oasis/upload',
+    'luminous-oasis/troubleshooting',
+    'luminous-oasis/gimmicks',
   ],
 };
 

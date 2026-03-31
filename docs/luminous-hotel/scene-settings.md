@@ -60,6 +60,10 @@ SignPlate_0(Default) は、プレートが掛かっていない時の既定 BGM 
 
 SignPlateObjects に追加したオブジェクトは、そのムードの時だけ表示されます。反対に SignPlateObjects Inactive に入れたものは非表示になります。
 
+:::tip プレートの使い方
+SignPlateObjectsにオブジェクトを指定することで、特定のプレートをかけたときにだけ出てくるアイテムなどを設定することができます。
+:::
+
 <div class="doc-media doc-media--left doc-media--full">
 	<img src="/lura-world-doc/img/luminous-hotel/image10.png" alt="SignPlateObjects の設定欄" width="624" />
 </div>
@@ -68,17 +72,21 @@ SignPlateObjects に追加したオブジェクトは、そのムードの時だ
 もともと含まれている 1_Chill などのオブジェクトは、ポストエフェクトやリバーブ調整に使われているため、そのまま残してください。
 :::
 
-もともと含まれている 1_Chill などのオブジェクトは、ポストエフェクトやリバーブ調整に使われているため、そのまま残してください。
 
 ## 動画プレーヤーの設定
 
 動画プレーヤーは MoviePlayerHere の階層へ入れると、Movie プレート選択時に表示される構成です。好みの動画プレーヤーを配置して使ってください。
 
 <div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-hotel/image27.png" alt="MoviePlayerHere の階層" width="525" />
+	<img src="/lura-world-doc/img/luminous-hotel/vizvid_inspector_1.jpg" alt="MoviePlayerHere の階層" width="525" />
 </div>
 
 デモワールドでは VizVid を利用しています。動画プレーヤー固有の操作や設定は、各プレーヤーのマニュアルを参照してください。
+
+:::warning 配置について 
+動画プレーヤーは、vizvidであればMoviePlayerHereの階層に入れるだけ位置が合うように調整されています。  
+別のプレーヤーを利用する場合は、MoviePlayerHere と同じ位置に配置して、必要に応じて位置を微調整してください。
+:::
 
 ### VizVid の配置例
 
@@ -88,8 +96,13 @@ SignPlateObjects に追加したオブジェクトは、そのムードの時だ
 	<img src="/lura-world-doc/img/luminous-hotel/image2.png" alt="VizVid の画面プレート" width="600" />
 </div>
 
-<div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-hotel/image36.png" alt="701 の VizVid 配置位置" width="800" />
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-hotel/vizvid_inspector_1.jpg" alt="701 の VizVid 配置先 Hierarchy" width="600" />
+	</div>
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-hotel/vizvid_inspector_2.jpg" alt="701 の VizVid Transform 設定" width="600" />
+	</div>
 </div>
 
 #### 701 のオーディオ設定
@@ -110,7 +123,7 @@ SignPlateObjects に追加したオブジェクトは、そのムードの時だ
 </div>
 
 <div class="doc-media doc-media--left doc-media--full">
-	<img src="/lura-world-doc/img/luminous-hotel/image57.png" alt="702 の VizVid 配置位置" width="800" />
+	<img src="/lura-world-doc/img/luminous-hotel/vizvid_inspector_1.jpg" alt="702 の VizVid 配置位置" width="800" />
 </div>
 
 <div class="doc-media-row">

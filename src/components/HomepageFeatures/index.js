@@ -21,7 +21,7 @@ const FeatureList = [
   {
     title: 'LuminousOasis スタートガイド',
     eyebrow: 'Quick Start',
-    image: '/img/luminous-oasis_img.jpg',
+    image: '/img/luminous-oasis/LuminousOasis.jpg',
     description: (
       <>
         LuminousOasis 用の独立したガイド枠です。今後の本文追加をこの構成に沿って進められます。
@@ -36,7 +36,7 @@ const FeatureList = [
     eyebrow: 'Next Guide',
     description: (
       <>
-        次のワールドアセット用ガイドを追加予定です。
+        このページは準備中です。
       </>
     ),
     linkLabel: '準備中',

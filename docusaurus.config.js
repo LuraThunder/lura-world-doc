@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Lura World Asset Guide',
-  tagline: 'VRChatワールドアセットの導入と設定をまとめたクイックスタートガイド',
+  tagline: 'VRChat向けワールドアセットのクイックスタートガイド',
   favicon: 'img/icon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -47,8 +47,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/LuraThunder/lura-world-doc/tree/main/',
         },
         blog: false,
         theme: {
@@ -64,7 +62,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/rapture_20260204093229.jpg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         logo: {

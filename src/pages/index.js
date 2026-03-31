@@ -19,16 +19,17 @@ function HomepageHeader() {
           </Heading>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p className={styles.heroLead}>
-            QuickBrownワールドアセットのセットアップから公開前の確認までを短い導線で確認できるドキュメントをまとめています。
+            QuickBrownワールドアセット購入者向けのクイックスタートガイド集です。<br />
+            導入、初期設定、アップロードの流れを確認できます。
           </p>
         </div>
         <div className={styles.heroPanel}>
           <p className={styles.panelLabel}>QuickBrown Design Studio</p>
           <p className={styles.panelBody}>
-            Lura 制作の VRChat 向けワールドアセットとギミックを配布している BOOTH ショップです。
+            Lura 制作の VRChat 向けワールドアセットを配布している BOOTHページです。
           </p>
           <Link className={styles.panelLink} href="https://lura.booth.pm/">
-            BOOTH ショップを見る
+            BOOTH ページを見る
           </Link>
         </div>
       </div>
