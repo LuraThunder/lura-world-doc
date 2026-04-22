@@ -1,0 +1,42 @@
+{
+  "link.title.ドキュメント": {
+    "message": "ドキュメント",
+    "description": "The title of the footer links column with title=ドキュメント in the footer"
+  },
+  "link.title.コミュニティ": {
+    "message": "コミュニティ",
+    "description": "The title of the footer links column with title=コミュニティ in the footer"
+  },
+  "link.title.配布先": {
+    "message": "配布先",
+    "description": "The title of the footer links column with title=配布先 in the footer"
+  },
+  "link.item.label.トップページ": {
+    "message": "トップページ",
+    "description": "The label of footer link with label=トップページ linking to /"
+  },
+  "link.item.label.LuminousHotel": {
+    "message": "LuminousHotel",
+    "description": "The label of footer link with label=LuminousHotel linking to /docs/luminous-hotel/overview"
+  },
+  "link.item.label.LuminousOasis": {
+    "message": "LuminousOasis",
+    "description": "The label of footer link with label=LuminousOasis linking to /docs/luminous-oasis/overview"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "The label of footer link with label=X linking to https://x.com/Lu_Ra_999"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/LuraThunder"
+  },
+  "link.item.label.BOOTH ショップ": {
+    "message": "BOOTH ショップ",
+    "description": "The label of footer link with label=BOOTH ショップ linking to https://lura.booth.pm/"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 LuraThunder. Docusaurus で構築。",
+    "description": "The footer copyright"
+  }
+}

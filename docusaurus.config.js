@@ -1,12 +1,6 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,30 +8,31 @@ const config = {
   tagline: 'VRChat向けワールドアセットのクイックスタートガイド',
   favicon: 'img/icon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://LuraThunder.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/lura-world-doc/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'LuraThunder', // Usually your GitHub org/user name.
-  projectName: 'lura-world-doc', // Usually your repo name.
+  organizationName: 'LuraThunder',
+  projectName: 'lura-world-doc',
 
   onBrokenLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja'],
+    locales: ['ja', 'en'],
+    localeConfigs: {
+      ja: {
+        label: '日本語',
+        htmlLang: 'ja-JP',
+      },
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+    },
   },
 
   presets: [
@@ -59,7 +54,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/CardImage.png',
       colorMode: {
         defaultMode: 'light',
@@ -68,7 +62,7 @@ const config = {
       },
       navbar: {
         logo: {
-          alt: 'Lura World Docs Logo',
+          alt: 'Lura World Docs ロゴ',
           src: 'img/Logo_Alpha.png',
         },
         items: [
@@ -83,6 +77,10 @@ const config = {
             sidebarId: 'luminousOasisSidebar',
             label: 'LuminousOasis',
             position: 'left',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/LuraThunder/lura-world-doc',
@@ -134,7 +132,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} LuraThunder. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LuraThunder. Docusaurus で構築。`,
       },
       prism: {
         theme: prismThemes.github,

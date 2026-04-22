@@ -1,45 +1,72 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'LuminousHotel スタートガイド',
-    eyebrow: 'Quick Start',
+    title: translate({
+      id: 'homepage.features.hotel.title',
+      message: 'LuminousHotel ガイド',
+    }),
+    eyebrow: translate({
+      id: 'homepage.features.hotel.eyebrow',
+      message: 'Quick Start',
+    }),
     image: '/img/luminous-hotel_img.jpg',
-    description: (
-      <>
-        導入、初期設定、アップロード、よくある質問までを 1 本の導線で確認できます。
-      </>
-    ),
+    description: translate({
+      id: 'homepage.features.hotel.description',
+      message:
+        '導入、初期設定、アップロード、改変、トラブル対応まで、LuminousHotel の一連の流れを 1 本で追えるガイドです。',
+    }),
     link: '/docs/luminous-hotel/overview',
-    linkLabel: 'LuminousHotel を開く',
+    linkLabel: translate({
+      id: 'homepage.features.hotel.linkLabel',
+      message: 'LuminousHotel を開く',
+    }),
     isComingSoon: false,
   },
   {
-    title: 'LuminousOasis スタートガイド',
-    eyebrow: 'Quick Start',
+    title: translate({
+      id: 'homepage.features.oasis.title',
+      message: 'LuminousOasis ガイド',
+    }),
+    eyebrow: translate({
+      id: 'homepage.features.oasis.eyebrow',
+      message: 'Quick Start',
+    }),
     image: '/img/luminous-oasis/LuminousOasis.jpg',
-    description: (
-      <>
-        LuminousOasis 用の独立したガイド枠です。今後の本文追加をこの構成に沿って進められます。
-      </>
-    ),
+    description: translate({
+      id: 'homepage.features.oasis.description',
+      message:
+        'LuminousOasis のセットアップ、RoomOwner や BGM の初期設定、アップロード、ギミック解説まで整理しています。',
+    }),
     link: '/docs/luminous-oasis/overview',
-    linkLabel: 'LuminousOasis を開く',
+    linkLabel: translate({
+      id: 'homepage.features.oasis.linkLabel',
+      message: 'LuminousOasis を開く',
+    }),
     isComingSoon: false,
   },
   {
-    title: 'Coming Soon',
-    eyebrow: 'Next Guide',
-    description: (
-      <>
-        このページは準備中です。
-      </>
-    ),
-    linkLabel: '準備中',
+    title: translate({
+      id: 'homepage.features.future.title',
+      message: 'Coming Soon',
+    }),
+    eyebrow: translate({
+      id: 'homepage.features.future.eyebrow',
+      message: 'Next Guide',
+    }),
+    description: translate({
+      id: 'homepage.features.future.description',
+      message: '今後追加されるワールド向けガイドも、このサイトに順次掲載していきます。',
+    }),
+    linkLabel: translate({
+      id: 'homepage.features.future.linkLabel',
+      message: '準備中',
+    }),
     isComingSoon: true,
   },
 ];
@@ -52,7 +79,9 @@ function Feature({eyebrow, title, image, description, link, linkLabel, isComingS
       <div className={clsx(styles.featureCard, isComingSoon && styles.featureCardMuted)}>
         {isComingSoon ? (
           <div className={clsx(styles.featureImageLink, styles.featurePlaceholder)} aria-hidden="true">
-            <span className={styles.featurePlaceholderText}>Coming Soon</span>
+            <span className={styles.featurePlaceholderText}>
+              <Translate id="homepage.features.future.placeholder">Coming Soon</Translate>
+            </span>
           </div>
         ) : (
           <Link className={styles.featureImageLink} to={link} aria-label={title}>

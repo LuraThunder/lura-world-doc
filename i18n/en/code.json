@@ -1,0 +1,78 @@
+{
+  "homepage.hero.eyebrow": {
+    "message": "VRChat World Asset Docs",
+    "description": "Homepage eyebrow text"
+  },
+  "homepage.hero.lead": {
+    "message": "Readable documentation for QuickBrown Design Studio world assets, covering setup, initial configuration, upload flow, and customization points.",
+    "description": "Homepage hero lead text"
+  },
+  "homepage.panel.label": {
+    "message": "QuickBrown Design Studio",
+    "description": "Homepage panel label"
+  },
+  "homepage.panel.body": {
+    "message": "VRChat world assets created by Lura are available from the BOOTH shop page.",
+    "description": "Homepage panel body"
+  },
+  "homepage.panel.link": {
+    "message": "Visit the BOOTH shop",
+    "description": "Homepage panel link"
+  },
+  "homepage.layout.description": {
+    "message": "Documentation site for QuickBrown Design Studio VRChat world assets, covering setup, initial configuration, upload flow, and customization.",
+    "description": "Homepage layout meta description"
+  },
+  "homepage.features.hotel.title": {
+    "message": "LuminousHotel Guide",
+    "description": "Homepage feature card title for LuminousHotel"
+  },
+  "homepage.features.hotel.eyebrow": {
+    "message": "Quick Start",
+    "description": "Homepage feature eyebrow for LuminousHotel"
+  },
+  "homepage.features.hotel.description": {
+    "message": "A single guide that walks through the full LuminousHotel flow, from setup and initial configuration to upload, customization, and troubleshooting.",
+    "description": "Homepage feature description for LuminousHotel"
+  },
+  "homepage.features.hotel.linkLabel": {
+    "message": "Open LuminousHotel",
+    "description": "Homepage feature link label for LuminousHotel"
+  },
+  "homepage.features.oasis.title": {
+    "message": "LuminousOasis Guide",
+    "description": "Homepage feature card title for LuminousOasis"
+  },
+  "homepage.features.oasis.eyebrow": {
+    "message": "Quick Start",
+    "description": "Homepage feature eyebrow for LuminousOasis"
+  },
+  "homepage.features.oasis.description": {
+    "message": "Covers LuminousOasis setup, initial RoomOwner and BGM configuration, upload steps, and gimmick explanations.",
+    "description": "Homepage feature description for LuminousOasis"
+  },
+  "homepage.features.oasis.linkLabel": {
+    "message": "Open LuminousOasis",
+    "description": "Homepage feature link label for LuminousOasis"
+  },
+  "homepage.features.future.title": {
+    "message": "Coming Soon",
+    "description": "Homepage feature card title for future guides"
+  },
+  "homepage.features.future.eyebrow": {
+    "message": "Next Guide",
+    "description": "Homepage feature eyebrow for future guides"
+  },
+  "homepage.features.future.description": {
+    "message": "Guides for additional worlds will also be added to this site over time.",
+    "description": "Homepage feature description for future guides"
+  },
+  "homepage.features.future.linkLabel": {
+    "message": "In preparation",
+    "description": "Homepage feature link label for future guides"
+  },
+  "homepage.features.future.placeholder": {
+    "message": "Coming Soon",
+    "description": "Homepage placeholder text for future guides"
+  }
+}

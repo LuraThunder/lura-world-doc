@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "Lura World Docs logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.LuminousHotel": {
+    "message": "LuminousHotel",
+    "description": "Navbar item with label LuminousHotel"
+  },
+  "item.label.LuminousOasis": {
+    "message": "LuminousOasis",
+    "description": "Navbar item with label LuminousOasis"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
