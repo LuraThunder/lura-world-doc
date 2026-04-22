@@ -40,6 +40,27 @@ Check whether a required package is missing or whether another shader with the s
 
 You may be missing a required package, or a shader with the same name may be conflicting inside an existing project. Import the Full Pack last, and if that still does not fix it, try installing in a new project.
 
+---
+
+### Errors appear when entering Play mode or uploading, and the world will not start or upload
+
+After adding or deleting assets, Scene ID conflicts can sometimes occur, which may prevent Unity play mode or VRChat uploads from working correctly.
+
+In that case, open **Network ID Utility** and click **Regenerate Scene IDs**.
+
+1. Open **VRChat SDK > Utilities > Network ID Import and Export Utility**
+2. Confirm that the target is set to **VRCWorld**
+3. Click **Regenerate Scene IDs**
+4. Save the scene if needed, then try playing or uploading again
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-oasis/NetworkIDUtility_open.jpg" alt="Where to open Network ID Utility from the VRChat SDK menu" width="460" />
+</div>
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-oasis/NetworkIDUtility.jpg" alt="Network ID Utility window with the Regenerate Scene IDs button" width="460" />
+</div>
+
 ## World customization
 
 ### I want to change the mood board to something else

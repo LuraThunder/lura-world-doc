@@ -34,6 +34,27 @@ TMP Importer で Import TMP Essentials を実行するか、Package Manager の 
 
 シーンは Project ウィンドウからダブルクリックで開いてください。ドラッグアンドドロップで開くとマルチシーン扱いになり、想定外の状態になります。
 
+---
+
+### 実行時やアップロード時にエラーが出て起動できない / アップロードできない
+
+アセットを追加したり削除したりした後などに、Scene ID の不整合が発生して、Unity での実行や VRChat へのアップロードが失敗することがあります。
+
+その場合は **Network ID Utility** を開いて、**Regenerate Scene IDs** を押してください。
+
+1. **VRChat SDK > Utilities > Network ID Import and Export Utility** を開く
+2. Target が **VRCWorld** になっていることを確認する
+3. **Regenerate Scene IDs** を押す
+4. 必要に応じてシーンを保存してから、もう一度実行またはアップロードする
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-oasis/NetworkIDUtility_open.jpg" alt="VRChat SDK から Network ID Utility を開く場所" width="460" />
+</div>
+
+<div class="doc-media doc-media--left">
+	<img src="/lura-world-doc/img/luminous-oasis/NetworkIDUtility.jpg" alt="Network ID Utility の画面と Regenerate Scene IDs ボタン" width="460" />
+</div>
+
 ## 関連ページ
 
 - [セットアップと導入](./setup)
