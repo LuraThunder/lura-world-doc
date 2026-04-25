@@ -56,7 +56,17 @@ LuminousHotel **ver1.10 and later** supports VRC Light Volumes. Register it with
 
 Once **LuminousHotel ver1.10 or later** is imported, the light volume settings are already applied when the scene opens.
 
-## 3. Import the UnityPackages
+## 3. Add lilToon
+
+Open the [official lilToon website](https://lilxyzw.github.io/lilToon/) and use **Add to VCC** to install the latest **lilToon** package.
+
+1. Open the [official lilToon website](https://lilxyzw.github.io/lilToon/)
+2. Click **Add to VCC** to register it with Creator Companion
+3. Open **Manage Project** for the target project
+4. Add **lilToon** from **Manage Packages**
+5. Update **Installed Version** to the latest version and import it
+
+## 4. Import the UnityPackages
 
 Import **all UnityPackages** that correspond to the pack you purchased.
 
@@ -83,7 +93,7 @@ If the order was wrong, re-import the packages and reopen the scene.
 
 If you import into an existing project, shader conflicts can make the entire scene **turn pink**. If the cause is difficult to isolate, setting up a **new project** is the safer option.
 
-## 4. Import TextMeshPro Essentials
+## 5. Import TextMeshPro Essentials
 
 If the TMP Importer appears after import, run **Import TMP Essentials**.
 
@@ -97,7 +107,7 @@ If you opened the scene first and then installed TMP, **reopen the scene** so th
 	<img src="/lura-world-doc/img/luminous-hotel/image7.png" alt="Installing TextMeshPro from Package Manager" width="600" />
 </div>
 
-## 5. Open the scene
+## 6. Open the scene
 
 Open the following scenes by **double-clicking them in the Project window**. If you drag and drop them, Unity treats them as a **multi-scene setup**, and the project will not be configured correctly.
 

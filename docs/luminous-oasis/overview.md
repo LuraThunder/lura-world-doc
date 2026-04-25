@@ -7,7 +7,7 @@ sidebar_position: 1
 Luminous Oasis をご購入いただきありがとうございます。
 
 <div class="doc-media doc-media--left">
-	<img src="/lura-world-doc/img/luminous-oasis/image11.png"  width="800" />
+	<img src="/lura-world-doc/img/luminous-oasis/PHOTO_Camera_24.png"  width="600" />
 </div>
 
 このドキュメントでは以下の項目について解説しています。
