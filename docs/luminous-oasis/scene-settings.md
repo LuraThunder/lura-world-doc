@@ -107,6 +107,115 @@ VizVid の On-Screen Control であれば MoviePlayerHere の位置に配置す�
 
 なお、動画プレーヤーについての詳細は VizVid のマニュアルを参照してください。
 
+### Vizvidのオーディオ設定
+
+#### 1.VizVidを選択 
+
+#### 2.Default Audio Source を設定 
+
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_1.jpg" alt="VVMW On-Screen Controls の配置例" width="520" />
+	</div>
+</div>
+
+
+
+#### 3.Default Audio Source を設定
+
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_2.jpg" alt="VVMW On-Screen Controls の配置例" width="520" />
+	</div>
+</div>
+
+**Spatial Blend を1に**  
+**Spreadを120に**  
+**Linear Rolloffに**  
+**Min Distance 19**  
+**Max Distance 35**  
+
+### ■■ここからは動画のBGMにフィルターをかけたい人向けの設定■■ 
+
+:::tip ヒント
+動画プレイヤーにのみ、**部屋に入ったときに音をくぐもらせる LowpassFilter**を設定します。  
+不要な場合はここまでの設定のみでも問題ありません。
+:::
+
+#### 4.複製してAVPro用オーディオを作成 (ctrl+D)
+
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_3.jpg" alt="VVMW On-Screen Controls の配置例" width="520" />
+	</div>
+</div>
+
+#### 5.Default Audio Source にフィルターを設定
+
+Default Audio Sourceに戻り、以下を設定してください。  
+  
+**・AudioLow Pass Filter を追加**
+
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_4-1.jpg" alt="VVMW On-Screen Controls の配置例" width="250" />
+	</div>
+</div>
+**・VRC AVPro Video Speakerを右クリックしてRemove Component**
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_4-2.jpg" alt="VVMW On-Screen Controls の配置例" width="600" />
+	</div>
+</div>
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_4-3.jpg" alt="VVMW On-Screen Controls の配置例" width="600" />
+	</div>
+</div>
+
+#### 6.LowpassTriggerに登録  
+3つのLowPassTriggerのターゲットに Default Audio Source をそれぞれ追加してください。  
+
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_5.jpg" alt="VVMW On-Screen Controls の配置例" width="600" />
+	</div>
+</div>
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_6.jpg" alt="VVMW On-Screen Controls の配置例" width="600" />
+	</div>
+</div>
+
+#### 7. VizVidにオーディオソースを登録
+
+**Vizvid** (Core) を選択し、Live(AVPro Module) のプライマリオーディオソースに**複製したAVPro用オーディオ**を設定してください。
+<div class="doc-media-row">
+	<div class="doc-media doc-media--left">
+		<img src="/lura-world-doc/img/luminous-oasis/VizVidSetting_7.jpg" alt="VVMW On-Screen Controls の配置例" width="600" />
+	</div>
+</div>
+  
+
+モジュール設定のオーディオソースの配列に、  
+  
+・**AVPro用オーディオソース**  
+・**Default Audio Source**   
+という順番になるように設定  
+
+:::warning 警告
+VRChatの仕様により、**AVPro用のオーディオソースにLowPassFilterやスクリプトがついている場合  
+音量など、あらゆるコントロールが効かなくなってしまいます**。（来的には修正されるかも）  
+そのため、面倒ですが、フィルターを使うためにはAudioSourceを分ける必要があります。  
+現状はBuiltinのビデオのみ、オーディオフィルターを機能させることができます。  
+:::
+  
+
+
+
+
+
+
 ## 次に進むページ
 
 [アップロードと Quest 対応](./upload) で公開準備へ進んでください。
