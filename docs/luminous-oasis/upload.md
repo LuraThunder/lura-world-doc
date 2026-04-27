@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# アップロードと Quest 対応
+# アップロード
 
 シーン設定が済んだら、PC 版と Quest 版のアップロード準備を行います。
 
@@ -26,9 +26,13 @@ VRChatSDK から Show Control Panel でパネルを出します。ログイン�
 
 Build and Upload を押してアップロードします。
 
-## Quest 向けアップロード
+### Quest 向けアップロード
+:::warning iOS / Android 向けアップロードの対応範囲
+ワールドは iOS / Android にもアップロードは可能ですが、公式には対応しておりません。  
+こちらはサポート対応はできかねますので、ご了承ください。
+:::
 
-Platform の項目を Windows / Android / iOS にチェックします。初回は切り替えにかなり時間がかかります。
+<!-- Platform の項目を Windows / Android / iOS にチェックします。初回は切り替えにかなり時間がかかります。
 
 <div class="doc-media doc-media--left doc-media--full">
 	<img src="/lura-world-doc/img/luminous-oasis/image26.png" alt="Multi-Platform Build & Publish の設定画面" width="624" />
@@ -49,8 +53,8 @@ iOS / Android でのアップロード時に自動的にオブジェクトのオ
 	<div class="doc-media doc-media--left">
 		<img src="/lura-world-doc/img/luminous-oasis/image28.png" alt="SwitchPlatformOverride の設定欄" width="520" />
 	</div>
-</div>
+</div> -->
 
-## 次に進むページ
+## 次のページ
 
 [よくある質問](./troubleshooting) で、導入時の注意点を確認できます。

@@ -24,8 +24,8 @@ function HomepageHeader() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p className={styles.heroLead}>
             <Translate id="homepage.hero.lead">
-              QuickBrown Design Studio のワールドアセットを、導入手順から初期設定、
-              アップロード、改変ポイントまで読みやすく整理したドキュメントです。
+              QuickBrown Design Studio のワールドアセットの、導入手順や初期設定、
+              アップロード、よくある質問などを整理したドキュメントです。
             </Translate>
           </p>
         </div>

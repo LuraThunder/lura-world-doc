@@ -22,7 +22,9 @@ VRChat の Web サイトから Creator Companion をインストールし、ワ�
 ver2.0以前の既存の LuminousHotel とは互換性がなく、そのまま LuminousOasis を導入するとシーンや設定データが壊れるおそれがあります。
 LuminousOasis を利用する場合は、必ず新規プロジェクトを作成したうえで導入してください。
 :::
+[質問：古いバージョンのLuminous HotelにLuminous Oasisを入れても大丈夫？](./troubleshooting)
 
+  
 <div class="doc-media-row">
 	<div class="doc-media doc-media--left">
 		<img src="/lura-world-doc/img/luminous-oasis/image1.png" alt="Creator Companion のダウンロード画面" width="600" />
@@ -66,9 +68,22 @@ LuminousOasis は VRC Light Volumes を使用しています。導入前に VCC 
 	<img src="/lura-world-doc/img/luminous-oasis/image6.png" alt="Manage Packages で VRC Light Volumes を確認する画面" width="624" />
 </div>
 
+
+## 3. lilToon を追加する
+
+[lilToon 公式サイト](https://lilxyzw.github.io/lilToon/) にアクセスし、**VCC に追加**から最新の **lilToon** を導入してください。
+
+1. [lilToon 公式サイト](https://lilxyzw.github.io/lilToon/) を開く
+2. **VCC に追加** を押して Creator Companion に登録する
+3. 対象プロジェクトの **Manage Project** を開く
+4. **Manage Packages** から **lilToon** を追加する
+5. **Installed Version を最新**にしてインポートする
+
+
+  
 これで事前準備は完了です。
 
-## 3. UnityPackage をインポートする
+## 4. UnityPackage をインポートする
 
 購入したパックに応じて、必要な UnityPackage をインポートしてください。
 
@@ -93,7 +108,7 @@ LuminousHotel と一緒に使う場合は、Full Pack のみ対応していま�
 既存のプロジェクトにインポートしている場合は、シェーダーが重複している可能性があります。片方のシェーダーを削除するか、新規にプロジェクトを作成してください。
 :::
 
-## 4. TextMeshPro Essentials を導入する
+## 5. TextMeshPro Essentials を導入する
 
 インポート後に TMP Importer が表示されたら、**Import TMP Essentials** を実行してください。
 
@@ -109,7 +124,7 @@ LuminousHotel と一緒に使う場合は、Full Pack のみ対応していま�
 	<img src="/lura-world-doc/img/luminous-oasis/image8.png" alt="Package Manager で TextMeshPro を導入する画面" width="600" />
 </div>
 
-## 5. シーンを開く
+## 7. シーンを開く
 
 シーンは Project ウィンドウからダブルクリックで開いてください。ドラッグアンドドロップで開くとマルチシーン扱いになり、正しくセットアップできません。
 

@@ -6,7 +6,25 @@ sidebar_position: 5
 
 セットアップ時や公開前に詰まりやすい項目をまとめています。
 
-## 導入と公開
+
+### 古いバージョンのLuminous HotelにLuminous Oasisを入れても大丈夫？
+
+エレベーターのギミックなどを刷新しているため、**壊れてしまう可能性が高い**です。  
+新規プロジェクトを作成し、中身の移植を検討してください。  
+壊れてしまってもサポート対応はできかねますのでご注意ください。
+
+
+:::tip 移植のヒント
+・旧プロジェクトを開き、Hierarchyから必要なオブジェクトを複数選択して、右クリックからコピー  
+・空の新規シーンを作成し、ExportSceneなどの名前で保存。  
+・ExportSceneのHierarchyの空いているところを右クリックしてペースト。  
+・プロジェクトパネルからそのシーンを選択し、右クリックしてExportPackage。（必要なものだけ）  
+・新プロジェクトにインポートして、ExportSceneを開き、すべてコピー後、新シーンにぺースト。  
+  
+  という流れでシーンの中身を移植するのが比較的簡単な方法です。
+:::
+
+---
 
 ### LuminousHotel と一緒に使う時の対応構成
 
@@ -24,7 +42,7 @@ LuminousOasis.unitypackage
 
 ---
 
-### TextMeshPro の表示が崩れる
+### テキストが表示されない
 
 TMP Importer で Import TMP Essentials を実行するか、Package Manager の Unity Registry から TextMeshPro を導入してください。
 
@@ -32,7 +50,10 @@ TMP Importer で Import TMP Essentials を実行するか、Package Manager の 
 
 ### シーンが正しく開けない
 
-シーンは Project ウィンドウからダブルクリックで開いてください。ドラッグアンドドロップで開くとマルチシーン扱いになり、想定外の状態になります。
+シーンは Project ウィンドウから**ダブルクリック**で開いてください。**ドラッグアンドドロップで開くとマルチシーン扱いになり**、想定外の状態になります。
+:::tip
+なぜかマルチシーンでもアップロードできてしまうことがありますが、ワールドに入ることができません。
+:::
 
 ---
 
@@ -54,6 +75,10 @@ TMP Importer で Import TMP Essentials を実行するか、Package Manager の 
 <div class="doc-media doc-media--left">
 	<img src="/lura-world-doc/img/luminous-oasis/NetworkIDUtility.jpg" alt="Network ID Utility の画面と Regenerate Scene IDs ボタン" width="460" />
 </div>
+
+---
+
+
 
 ## 関連ページ
 

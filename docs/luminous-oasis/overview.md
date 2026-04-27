@@ -18,7 +18,6 @@ Luminous Oasis をご購入いただきありがとうございます。
 - BGM の設定
 - 動画プレーヤーの設定
 - アップロード方法
-- Quest 対応
 
 是非自分の好みにワールドをカスタムし、ご自身や友人と Luminous Oasis をお楽しみください。
 
@@ -26,13 +25,14 @@ Luminous Oasis をご購入いただきありがとうございます。
 
 :::warning ver2.0以前の LuminousHotel とは非互換です
 ver2.0以前の既存の LuminousHotel プロジェクトに LuminousOasis を導入すると、互換性がなくシーンや設定データが壊れるおそれがあります。
-LuminousOasis を導入する場合は、必ず新規プロジェクトを作成してセットアップしてください。
+LuminousOasis を導入する場合は、必ず新規プロジェクトを作成してセットアップしてください。  
 :::
+[質問：古いバージョンのLuminous HotelにLuminous Oasisを入れても大丈夫？](./troubleshooting)
 
 ## 読み進め方
 
 1. [セットアップと導入](./setup) でプロジェクト作成からシーン起動まで進める
 2. [シーン初期設定](./scene-settings) で RoomOwner、BGM、動画プレーヤーを整える
-3. [アップロードと Quest 対応](./upload) で公開準備を進める
+3. [アップロード](./upload) で公開準備を進める
 4. [よくある質問](./troubleshooting) で導入時に詰まりやすいポイントを確認する
 5. [ギミック解説](./gimmicks) で各ギミックの役割と調整箇所を確認する
