@@ -70,6 +70,19 @@ LuminousHotel **ver1.10 以降**では VRC Light Volumes に対応していま�
 
 購入したパックに対応する UnityPackage を、対象パックに応じて**すべてインポート**してください。
 
+:::warning ver2.0以前の既存 LuminousHotel プロジェクトには導入しない
+ver2.0以前の既存の LuminousHotel とは互換性がなく、そのまま LuminousOasis を導入するとシーンや設定データが壊れるおそれがあります。  
+ver1.x系を利用していてver2.0に移行する場合は、必ず新規プロジェクトを作成したうえで導入してください。
+:::
+
+:::tip Ver2.0 のアップデート
+・スイッチやミラーがLuraSwitch2 仕様に置き換わっています。  
+・エレベーターで他のフロアに移動できるようになりました。
+
+**この変更が不要な場合は、Ver1系から無理にアップデートする必要はありません。**
+:::
+[関連する質問：古いバージョンのLuminous Hotelに入れても大丈夫？](./troubleshooting)
+
 ### Full Pack の場合
 
 - SimpleRoom_702

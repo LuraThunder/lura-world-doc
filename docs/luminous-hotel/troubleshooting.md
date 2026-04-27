@@ -178,6 +178,9 @@ AUDIO/CitySound と NoiseAmbient 以下の AudioSource の Volume を変更し�
 
 ### ミラーのフェード距離を変更したい
 
+:::tip
+Ver1.x系のミラー限定の問題です。
+:::
 VRCMirror_HQ の Distance Fade と Distance Fade Length を調整し、その後 VRCMirror_Transparent と VRCMirror_LQ にも同じ値を反映してください。共通マテリアルの影響を避けるため、複製してから編集する構成を推奨します。
 
 <div class="doc-media-row">
