@@ -4,13 +4,16 @@ sidebar_position: 3
 
 # シーン初期設定
 
-シーンを開いた後、アップロード前に確認しておきたい設定項目をまとめています。
+シーンを開いた後、アップロード前に以下の項目を設定します。
 
-## RoomOwner の設定
+## RoomOwner の設定（必須）
 
-LuminousOasis にはプールエリアへの入室を制限するためのユーザー名を事前登録する **RoomOwner システム**があります。
+LuminousOasis にはプールエリアへの入室を制限するための **RoomOwner システム**があります。
 
-**RoomOwner** と名前が一致するプレイヤーの場合、コンソールから鍵が出現し、入口のロックを解錠することが可能です。
+**RoomOwner** と名前が一致するプレイヤーがワールドにログインすると、コンソールから鍵が出現し、入口を開けることができます。
+
+RoomOwner にするユーザーの名前を Unity シーン上で入力してください。  
+ユーザーの名前とは、VRChat 上で表示される名前です。
 
 
 :::warning 注意
@@ -23,8 +26,10 @@ RoomOwner に登録しないと鍵を取り出すことができず、プール�
 
 
 :::warning VN3ライセンスによる規約
-構造的に**サンプルシーンと同一と見なせるような、十分な改変がされていない場合のPublic化**を禁止します。  
-ただし、**RoomOwner**の設定がされていて入室できるユーザーが制限されている場合はPublic化を許可します。
+Public 化はいずれかの状態を満たした場合に許可します。
+
+- **RoomOwner** の設定がされていて、入室できるユーザーが制限されている場合
+- サンプルシーンと同一と見なせないほど、構造的に十分な改変がされている場合
 :::
 [VN3ライセンスへのリンク](https://drive.google.com/drive/folders/1hld-5Japswx4XnFD4AgBRPKsS9bKdO57?usp=drive_link)
 
@@ -34,7 +39,7 @@ RoomOwner に登録しないと鍵を取り出すことができず、プール�
 
 ### LuminousOasis 単体でご利用の方
 
-以下から RoomOwnerList に登録してください。RoomOwner に設定すると、実行時にディスプレイへ名前が表示され、入口の鍵を取得できるようになります。
+以下から RoomOwnerList に登録してください。RoomOwner に設定すると、ワールドログイン時にディスプレイへ名前が表示され、入口の鍵を取得できるようになります。
 
 <div class="doc-media-row">
 	<div class="doc-media doc-media--left">
@@ -64,7 +69,7 @@ RoomOwner は複数人登録することができます。VRChat のユーザー
 
 ワールドに BGM を簡単にセットアップできるように、簡易的な BGM 再生機能である **MusicSequencer** というシステムを用意してあります。
 
-**MusicSequencer** は BGM を連続で再生し、ループさせることができます。簡易的ですがご利用ください。
+**MusicSequencer** は設定した音源を連続で再生し、ループさせることができます。
 
 <div class="doc-media-row">
 	<div class="doc-media doc-media--left">
@@ -75,15 +80,15 @@ RoomOwner は複数人登録することができます。VRChat のユーザー
 	</div>
 </div>
 
-:::tip 快適さのためのヒント
-最近は動画の再生が個人の環境によって不安定なこともあるため、ワールド BGM が無音にならないようにするため音源をインポートする方法をおすすめしています。
+:::tip 音源について
+動画 URL の再生が個人の環境によって不安定なこともあるため、無音にならないよう音源をインポートする方法をおすすめしています。
 :::
 
 :::tip 音の遮蔽
-オーディオは LowPassTrigger で管理されており、エントランスやラウンジ内ではサウンドが遮蔽された感じになります。
+エントランスやラウンジ内では BGM が遮蔽されます。
 :::
 
-MusicSequencer の AudioSource も LowPassTrigger によってコントロールされているため、サウンドの遮蔽がかかります。特に何もする必要はありません。
+遮蔽対象は MusicSequencer の AudioSource を LowPassTrigger によってコントロールしています。特に何もする必要はありません。
 
 <div class="doc-media-row">
 	<div class="doc-media doc-media--left">
@@ -98,8 +103,7 @@ MusicSequencer の AudioSource も LowPassTrigger によってコントロール
 
 ## 動画プレーヤーの設定
 
-動画プレーヤーは MoviePlayerHere の階層に入れることで、想定の位置、回転、スケールで設置することができます。  
-使用するプレーヤーによって微調整が必要な場合があります。
+動画プレーヤーは MoviePlayerHere の階層に入れ、位置、回転、スケールを調整してください。
 
 <div class="doc-media doc-media--left">
 	<img src="/lura-world-doc/img/luminous-oasis/image20.png" alt="MoviePlayerHere の階層" width="525" />
@@ -164,7 +168,7 @@ VizVid の On-Screen Control であれば MoviePlayerHere の位置に配置す�
 **Min Distance 19**  
 **Max Distance 35**  
 
-### ■■ここからは動画のBGMにフィルターをかけたい人向けの設定■■ 
+### 動画・BGM にフィルターをかけたい人向けの設定
 
 :::tip ヒント
 動画プレイヤーにのみ、**部屋に入ったときに音をくぐもらせる LowpassFilter**を設定します。  
@@ -234,7 +238,7 @@ Default Audio Sourceに戻り、以下を設定してください。
 
 :::warning 警告
 VRChatの仕様により、**AVPro用のオーディオソースにLowPassFilterやスクリプトがついている場合  
-音量など、あらゆるコントロールが効かなくなってしまいます**。（来的には修正されるかも）  
+音量など、あらゆるコントロールが効かなくなってしまいます**。（将来的には修正されるかも）  
 そのため、面倒ですが、フィルターを使うためにはAudioSourceを分ける必要があります。  
 現状はBuiltinのビデオのみ、オーディオフィルターを機能させることができます。  
 :::
@@ -245,6 +249,4 @@ VRChatの仕様により、**AVPro用のオーディオソースにLowPassFilter
 
 
 
-## 次に進むページ
-
-[アップロード](./upload) で公開準備へ進んでください。
+次に、[VRChat への公開準備とアップロード](./upload)を行います。

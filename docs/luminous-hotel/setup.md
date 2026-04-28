@@ -132,6 +132,8 @@ ver1.x系を利用していてver2.0に移行する場合は、必ず新規プ�
 	<img src="/lura-world-doc/img/luminous-hotel/image41.png" alt="Project ウィンドウからシーンを開く例" width="800" />
 </div>
 
+## 各シーンの格納場所
+
 ### Full Pack
 
 Assets/QuickBrown/LuminousHotel/FullPack/SCENE/LuminousHotel_FullPack.unity
@@ -144,6 +146,4 @@ Assets/QuickBrown/LuminousHotel/Room701_Condominium/SCENE/Condominium_701.unity
 
 Assets/QuickBrown/LuminousHotel/Room702_SimpleRoom/SCENE/SimpleRoom_702.unity
 
-## 次に読むページ
-
-[シーン初期設定](./scene-settings.md) で RoomOwner やサインプレートの設定へ進んでください。
+次に、[シーン初期設定](./scene-settings.md)で RoomOwner やサインプレートを設定します。

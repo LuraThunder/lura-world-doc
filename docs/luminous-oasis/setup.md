@@ -158,6 +158,4 @@ Assets/QuickBrown/LuminousHotel/FullPack_OasisPlus/SCENE/FullPack_OasisPlus.unit
 	</div>
 </div>
 
-## 次に進むページ
-
-[シーン初期設定](./scene-settings) で RoomOwner や BGM の設定へ進んでください。
+次に、[RoomOwner の設定（必須）と動画プレイヤーの導入](./scene-settings)を行います。
