@@ -52,22 +52,25 @@ const FeatureList = [
   },
   {
     title: translate({
-      id: 'homepage.features.future.title',
-      message: 'Coming Soon',
+      id: 'homepage.features.riskyCoin.title',
+      message: 'RiskyCoin ガイド',
     }),
     eyebrow: translate({
-      id: 'homepage.features.future.eyebrow',
-      message: 'Next Guide',
+      id: 'homepage.features.riskyCoin.eyebrow',
+      message: 'Gimmick Guide',
     }),
+    image: '/img/risky-coin/MainThumb.jpg',
     description: translate({
-      id: 'homepage.features.future.description',
-      message: '今後追加されるワールド向けガイドも、このサイトに順次掲載していきます。',
+      id: 'homepage.features.riskyCoin.description',
+      message:
+        'コイントス、収監、連勝・連敗 Orb、Level、Progress を備えた RiskyCoin の導入と設定をまとめています。',
     }),
+    link: '/docs/risky-coin/overview',
     linkLabel: translate({
-      id: 'homepage.features.future.linkLabel',
-      message: '準備中',
+      id: 'homepage.features.riskyCoin.linkLabel',
+      message: 'RiskyCoin を開く',
     }),
-    isComingSoon: true,
+    isComingSoon: false,
   },
 ];
 

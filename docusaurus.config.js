@@ -79,6 +79,12 @@ const config = {
             position: 'left',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'riskyCoinSidebar',
+            label: 'RiskyCoin',
+            position: 'left',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
@@ -106,6 +112,10 @@ const config = {
               {
                 label: 'LuminousOasis',
                 to: '/docs/luminous-oasis/overview',
+              },
+              {
+                label: 'RiskyCoin',
+                to: '/docs/risky-coin/overview',
               },
             ],
           },

@@ -6,10 +6,11 @@ sidebar_position: 2
 
 Lura World Docs は、VRChat 向けに制作したワールドアセットの導入手順とカスタマイズ方法をまとめるためのドキュメントサイトです。
 
-現時点では、以下の 2 ワールドを中心に整理しています。
+現時点では、以下のワールドとギミックを中心に整理しています。
 
 - [LuminousHotel 解説](./luminous-hotel/overview.md)
 - [LuminousOasis 解説](./luminous-oasis/overview.md)
+- [RiskyCoin 解説](./risky-coin/overview.md)
 
 また、今後追加するワールド向けに共通の枠も用意しています。
 
@@ -34,6 +35,13 @@ Lura World Docs は、VRChat 向けに制作したワールドアセットの導
 - ドキュメント枠を先行整備
 - 導入方法と補足解説を今後追加
 
+### RiskyCoin
+
+- ギミック概要と SafeMode / DangerMode
+- UnityPackage のインポートと配置
+- 連勝・連敗、Orb、収監時間、Level の設定
+- Save Data とトラブルシューティング
+
 ### 今後のワールド解説
 
 - 新規ワールド追加時の共通テンプレート
@@ -44,4 +52,3 @@ Lura World Docs は、VRChat 向けに制作したワールドアセットの導
 1. [LuminousHotelへようこそ](./luminous-hotel/overview.md)
 2. [セットアップと導入](./luminous-hotel/setup.md)
 3. [シーン初期設定](./luminous-hotel/scene-settings.md)
-

@@ -30,6 +30,12 @@ const sidebars = {
     'luminous-oasis/troubleshooting',
     'luminous-oasis/gimmicks',
   ],
+  riskyCoinSidebar: [
+    'risky-coin/overview',
+    'risky-coin/setup',
+    'risky-coin/settings',
+    'risky-coin/troubleshooting',
+  ],
 };
 
 export default sidebars;
