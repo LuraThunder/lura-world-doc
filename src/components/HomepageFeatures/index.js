@@ -62,8 +62,7 @@ const FeatureList = [
     image: '/img/risky-coin/MainThumb.jpg',
     description: translate({
       id: 'homepage.features.riskyCoin.description',
-      message:
-        'コイントス、収監、連勝・連敗 Orb、Level、Progress を備えた RiskyCoin の導入と設定をまとめています。',
+      message: 'RiskyCoinの導入方法を解説しています。',
     }),
     link: '/docs/risky-coin/overview',
     linkLabel: translate({
