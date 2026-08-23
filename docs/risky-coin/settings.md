@@ -20,7 +20,19 @@ Hierarchy から `RiskyCoin` を選択すると、Inspector の **Risky Coin Con
 `詳細設定 / Advanced`、`同期状態 / Network State`、`内部参照 / System References` は、演出や内部同期のための項目です。通常の導入では開く必要はありません。
 :::
 
-## 1. イベント発生ルール
+## 1. Auto Reset
+
+<div class="doc-media doc-media--left doc-media--full">
+  <img src="/lura-world-doc/img/risky-coin/Inspector_RiskyCoin_AutoReset.jpg" alt="Auto Reset の設定" width="624" />
+</div>
+
+| 項目 | 標準値 | 内容 |
+|---|---:|---|
+| `AutoPositionResetSecond` | 300 | Jail に誰もいない状態で指定時間が経過すると、コインを初期位置へ戻す |
+
+値の単位は秒です。`0` にすると Auto Reset は無効になります。
+
+## 2. イベント発生ルール
 
 <div class="doc-media doc-media--left doc-media--full">
   <img src="/lura-world-doc/img/risky-coin/Inspector_RiskyCoin_EventStreakRules.jpg" alt="Win Streak と Loss Streak の設定" width="624" />
@@ -35,7 +47,7 @@ Hierarchy から `RiskyCoin` を選択すると、Inspector の **Risky Coin Con
 
 たとえば A さん、B さん、C さんが順番に表を出した場合も、3 連勝として扱われます。
 
-## 2. イベント確率
+## 3. イベント確率
 
 <div class="doc-media doc-media--left doc-media--full">
   <img src="/lura-world-doc/img/risky-coin/Inspector_RiskyCoin_EventWeight.jpg" alt="Orb Weight と Reverse Chance の設定" width="624" />
@@ -74,7 +86,7 @@ SafeMode でも `Chase Weight`、`Slash Weight`、`Reverse Chance` を増やす�
 標準仕様では、インスタンス内で最初に発生する連勝 Orb はデメリット Orb へ反転しません。2 回目以降の連勝イベントから `Reverse Chance` が適用されます。
 :::
 
-## 3. 報酬の有効時間
+## 4. 報酬の有効時間
 
 <div class="doc-media doc-media--left doc-media--full">
   <img src="/lura-world-doc/img/risky-coin/Inspector_RiskyCoin_RewardDuration.jpg" alt="Key と Shield の有効時間" width="624" />
@@ -89,7 +101,7 @@ SafeMode でも `Chase Weight`、`Slash Weight`、`Reverse Chance` を増やす�
 
 Shield を有効時間内に追加で獲得した場合は、残り時間が延長されます。
 
-## 4. 収監時間
+## 5. 収監時間
 
 <div class="doc-media doc-media--left doc-media--full">
   <img src="/lura-world-doc/img/risky-coin/Inspector_RiskyCoin_Time.jpg" alt="Initial Sentence Seconds の設定" width="624" />
